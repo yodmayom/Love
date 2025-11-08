@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🎨 ตั้งค่าโทนพื้นหลังและฟอนต์ */
+body {
+  @apply bg-white text-gray-800 font-sans flex flex-col items-center justify-center min-h-screen;
+}
+
+/* 🩷 โทนสีชมพูอ่อนสำหรับธีมมินิมอล */
+:root {
+  --pink-soft: #fbcfe8;
+}
+
+/* 🧩 ตั้งค่าปุ่มมินิมอล */
+button {
+  @apply px-8 py-3 bg-pink-200 text-gray-700 font-medium rounded-full shadow-md hover:shadow-xl transition;
+}
