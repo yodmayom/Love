@@ -1,14 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+// ✅ ปรับให้เรียบง่าย ใช้งานได้แน่นอนบน Vercel
 export default defineConfig({
-  base: process.env.VITE_BASE_PATH || '/Love',
-  plugins: [
-    react({
-      babel: {
-        plugins: [['babel-plugin-react-compiler']],
-      },
-    }),
-  ],
+  plugins: [react()],
+  base: process.env.VITE_BASE_PATH || '/',
 })
